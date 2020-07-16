@@ -14,9 +14,10 @@ export default class Card extends React.Component {
 
     render(){
     console.log(this.state.color)
+    let colors = this.state.color[this.props.id]
     const cardStyle = {
-        backgroundColor: `#${this.state.color[0]}` || '#F00',
-        borderColor: `#${this.state.color[0]}` || '#F00',
+        backgroundColor: `#${colors}` || '#F00',
+        borderColor: `#${colors}` || '#F00',
     }
     return (
         <div className='Card' style={cardStyle}>
