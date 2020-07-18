@@ -7,6 +7,7 @@ import ComParametro from './components/basicos/ComParametro'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
+import FamiliaMembro from './components/basicos/FamiliaMembro'
 
 ReactDOM.render(
     
@@ -14,7 +15,12 @@ ReactDOM.render(
         <h1>Fundamentos React</h1>
         <div className='Cards'>
             <Card titulo='#05 - Componente com Filhos' id='1'>
-                <Familia surname='Monteiro Sena'/>
+            <Familia sobrenome='Monteiro Sena'>
+                <FamiliaMembro name='Eder'/>
+                <FamiliaMembro name='Damaris'/>
+                <FamiliaMembro name='Pixel'/>
+                <FamiliaMembro name='Delta'/>
+            </Familia>
             </Card>
 
             <Card titulo='#01 - Primeiro Componente' id='2'>
