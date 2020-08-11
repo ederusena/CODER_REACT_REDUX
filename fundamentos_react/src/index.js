@@ -8,12 +8,21 @@ import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 ReactDOM.render(
-    
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#07 - Desafio Repetição" id='6'>
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
+
+            <Card titulo='#06 - Repetição' id='5'>
+                <ListaAlunos></ListaAlunos>
+            </Card>
+
             <Card titulo='#05 - Componente com Filhos' id='1'>
             <Familia sobrenome='Monteiro Sena'>
                 <FamiliaMembro name='Eder'/>
