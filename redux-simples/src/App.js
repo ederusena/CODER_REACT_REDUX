@@ -5,6 +5,8 @@ import Soma from '../src/components/Soma'
 import Media from '../src/components/Media'
 import Sorteio from '../src/components/Sorteio'
 
+import { connect } from 'react-redux'
+
 function App() {
   return (
     <div className="App">
@@ -21,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default connect()(App);
