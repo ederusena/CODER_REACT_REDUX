@@ -10,11 +10,16 @@ import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
 
 ReactDOM.render(
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
+            <Card titulo="#08 - Par ou impar" id='6'>
+                <ParOuImpar numero={2}></ParOuImpar>
+            </Card>
+
             <Card titulo="#07 - Desafio Repetição" id='6'>
                 <TabelaProdutos></TabelaProdutos>
             </Card>
