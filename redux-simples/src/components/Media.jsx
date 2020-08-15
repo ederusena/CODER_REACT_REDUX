@@ -18,7 +18,7 @@ const Media = props => {
 
 const mapStatetoProps = state => {
     return {
-        num: state.numeros
+        num: state.numerosReducer
     }
 }
 
